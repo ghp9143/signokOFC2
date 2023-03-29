@@ -120,6 +120,23 @@
         </div>
     </header>
     <!-- / header -->
+    <!-- 메인베너 -->
+    <article class="main-video">
+        <div class="video-container">
+            <div class="video-box">
+                <video itemscope itemtype autoplay loop muted playsinline>
+                    <source src="./statics/video/main-banner-02.mp4" type="video/mp4">
+                    <meta itemprop="name" content="메인영상">
+                    <meta itemprop="description" content="싸인오케이 메인영상">
+                    <meta itemprop="duration" content="PT00H1M1S">
+                </video>
+            </div>
+            <ul class="scroll-box">
+                <li>SCROLL</li>
+                <li><img src="./statics/images/arrow_down.png" alt="아래로"></li>
+            </ul>
+        </div>
+    </article>
     <!-- 싸인오케이와 함께라면 계약도 간편할 수 있어요 -->
     <article class="article has-background">
         <div class="container">
@@ -131,38 +148,42 @@
             <ul class="icon-list slide-button-list">
                 <li class="icon-list__item" onclick="moveSlide(this,'upload')">
                     <div class="icon__box img-box is-active">
-                        <img src="" alt="" class="icon-list__img">
+                        <img src="./statics/images/icon_active_upload.png" alt="계약서업로드" class="icon-list__img icon-list-on">
+                        <img src="./statics/images/icon_upload.png" alt="계약서업로드" class="icon-list__img icon-list-off">
                     </div>
-                    <div class="icon-list__text-box">
-                        <p class="icon-list__number">01</p>
-                        <p class="">계약서 업로드</p>
-                    </div>
-                </li>
-                <li class="icon-list__item">
-                    <div class="icon__box img-box" onclick="moveSlide(this,'request')">
-                        <img src="" alt="" class="icon-list__img">
-                    </div>
-                    <div class="icon-list__text-box">
-                        <p class="icon-list__number">02</p>
-                        <p class="">작성 및 서명 요청</p>
+                    <div class="icon-list__text-box is-text-active">
+                        <p class="icon-list__number text-on">01</p>
+                        <p class="text-on">계약서 업로드</p>
                     </div>
                 </li>
-                <li class="icon-list__item">
-                    <div class="icon__box img-box" onclick="moveSlide(this,'sign')">
-                        <img src="" alt="" class="icon-list__img">
+                <li class="icon-list__item" onclick="moveSlide(this,'request')">
+                    <div class="icon__box img-box">
+                        <img src="./statics/images/icon_active_write.png" alt="작성 및 서명 요청" class="icon-list__img icon-list-on">
+                        <img src="./statics/images/icon_write.png" alt="작성 및 서명 요청" class="icon-list__img icon-list-off">
                     </div>
                     <div class="icon-list__text-box">
-                        <p class="icon-list__number">03</p>
-                        <p class="">계약서 서명</p>
+                        <p class="icon-list__number text-on">02</p>
+                        <p class="text-on">작성 및 서명 요청</p>
                     </div>
                 </li>
-                <li class="icon-list__item">
-                    <div class="icon__box img-box" onclick="moveSlide(this,'complete')">
-                        <img src="" alt="" class="icon-list__img">
+                <li class="icon-list__item" onclick="moveSlide(this,'sign')">
+                    <div class="icon__box img-box">
+                        <img src="./statics/images/icon_active_contract.png" alt="계약서 서명" class="icon-list__img icon-list-on">
+                        <img src="./statics/images/icon_contract.png" alt="계약서 서명" class="icon-list__img icon-list-off">
                     </div>
                     <div class="icon-list__text-box">
-                        <p class="icon-list__number">04</p>
-                        <p class="">완료 후 교부</p>
+                        <p class="icon-list__number text-on">03</p>
+                        <p class="text-on">계약서 서명</p>
+                    </div>
+                </li>
+                <li class="icon-list__item" onclick="moveSlide(this,'complete')">
+                    <div class="icon__box img-box">
+                        <img src="./statics/images/icon_active_complete.png" alt="완료 후 교부" class="icon-list__img icon-list-on">
+                        <img src="./statics/images/icon_complete.png" alt="완료 후 교부" class="icon-list__img icon-list-off">
+                    </div>
+                    <div class="icon-list__text-box">
+                        <p class="icon-list__number text-on">04</p>
+                        <p class="text-on">완료 후 교부</p>
                     </div>
                 </li>
             </ul>
@@ -172,25 +193,25 @@
                 <li class="preview-list__item slide__item is-active" data-slide="upload">
                     test1
                     <div class="preview__img-box img-box ">
-                        <img src="" alt="" class="preview-list__img">
+                        <img src="./statics/images/tablet_mockup.png" alt="" class="preview-list__img">
                     </div>
                 </li>
                 <li class="preview-list__item slide__item" data-slide="request">
                     test2
                     <div class="preview__img-box img-box">
-                        <img src="" alt="" class="preview-list__img">
+                        <img src="./statics/images/tablet_mockup.png" alt="" class="preview-list__img">
                     </div>
                 </li>
                 <li class="preview-list__item slide__item" data-slide="sign">
                     test3
                     <div class="preview__img-box img-box">
-                        <img src="" alt="" class="preview-list__img">
+                        <img src="./statics/images/mobile_mockup.png" alt="" class="preview-list__img">
                     </div>
                 </li>
                 <li class="preview-list__item slide__item" data-slide="complete"> 
                     test4
                     <div class="preview__img-box img-box">
-                        <img src="" alt="" class="preview-list__img">
+                        <img src="./statics/images/mobile_mockup.png" alt="" class="preview-list__img">
                     </div>
                 </li>
             </ul>
@@ -205,30 +226,30 @@
                     싸인오케이를<br>
                     다양한 비즈니스 환경에서 활용해보세요
                 </p>
-                <ul class="button-list">
-                    <li class="list__item button__item">
-                        <img src="" alt="prev" class="">
+                <ul class="button-list biz-btn-list">
+                    <li class="list__item button__item biz_btn btn_prev">
+                        <img src="./statics/images/arrow_left.png" alt="prev">
                     </li>
-                    <li class="list__item button__item">
-                        <img src="" alt="next" class="">
+                    <li class="list__item button__item biz_btn btn_next">
+                        <img src="./statics/images/arrow_right.png" alt="next">
                     </li>
                 </ul>
             </div>
             <ul class="biz-list slide-button-list">
-                <li class="biz__item list__item" onclick="moveSlide(this,'general')">일반</li>
+                <li class="biz__item list__item is-active" onclick="moveSlide(this,'general')">일반</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'test1')">금융/보험</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'test2')">건설/제조</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'edu')">교육</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'test3')">의료/복지</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'test4')">공공/협회</li>
-                <li class="biz__item is-active list__item" onclick="moveSlide(this,'partner')">가맹</li>
+                <li class="biz__item list__item" onclick="moveSlide(this,'partner')">가맹</li>
                 <li class="biz__item list__item" onclick="moveSlide(this,'outsourcing')">아웃소싱</li>
             </ul>
             <ul class="slide-content-list biz-slide-list">
                 <!-- 일반 -->
-                <li class="biz-slide__item slide__item" data-slide="general">
+                <li class="biz-slide__item slide__item is-active" data-slide="general">
                     <div class="biz__img-box img-box">
-                        <img src="" class="" alt=""> 
+                        <img src="./statics/images/business.png" class="" alt="비즈니스"> 
                     </div>
                     <div class="biz__text-box text-box">
                         <ul class="biz__keyword-area">
@@ -376,7 +397,7 @@
                     </div>
                 </li>
                 <!-- 가맹 -->
-                <li class="biz-slide__item slide__item is-active" data-slide="partner">
+                <li class="biz-slide__item slide__item" data-slide="partner">
                     <div class="biz__img-box img-box">
                         <img src="" class="" alt=""> 
                     </div>

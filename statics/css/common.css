@@ -104,7 +104,7 @@
 
 /* slide */
 .slide__item{
-    display: none;;
+    display: none;
 }
 .slide__item.is-active{
     display: block;
