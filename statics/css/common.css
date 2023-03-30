@@ -55,6 +55,10 @@
     text-align: left;;
 }
 
+.is-link img {
+    padding-left: 8px;
+}
+
 .button.is-secondary{
     background:#343639;
     color:#fff;
